@@ -17,7 +17,9 @@
       'ticket.priority.changed':            'renderText',
       'ticket.status.changed':              'renderText',
       'ticket.tags.changed':                'renderText',
-      'ticket.collaborators.changed':       'renderText'
+      'ticket.collaborators.changed':       'renderText',
+      'ticket.external_id.changed':         'renderText',
+
     },
 
     renderText: function() {
@@ -107,6 +109,8 @@
             return this.currentUser().name();
           case 'current_user.email':
             return this.currentUser().email();
+          case 'ticket.external_id':
+            return this.external_id();
           default:
             return placeholderStripped;
         }
