@@ -113,6 +113,11 @@
             return this.ticket().external().id();
           case 'ticket.externalid':
             return this.ticket().externalid();
+          //case 'ticket.instanceid':
+            //return this.ticket().custom_fields
+            
+            
+            
           default:
             return placeholderStripped;
         }
