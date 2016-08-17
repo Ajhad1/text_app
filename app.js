@@ -110,7 +110,9 @@
           case 'current_user.email':
             return this.currentUser().email();
           case 'ticket.external_id':
-            return this.ticket().external_id();
+            return this.ticket().external().id();
+          case 'ticket.externalid':
+            return this.ticket().externalid();
           default:
             return placeholderStripped;
         }
