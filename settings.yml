@@ -1,0 +1,48 @@
+textBody: |
+  The url is:
+    https://github.com/zendesk/text_app
+
+  case 'ticket.id':
+    {{ticket.id}}
+
+  case 'ticket.subject':
+    {{ticket.subject}}
+
+  case 'ticket.status':
+    {{ticket.status}}
+
+  case 'ticket.priority':
+    {{ticket.priority}}
+
+  case 'ticket.type':
+    {{ticket.type}}
+
+  case 'ticket.requester.id':
+    {{ticket.requester.id}}
+
+  case 'ticket.requester.name':
+    {{ticket.requester.name}}
+
+  case 'ticket.requester.email':
+    {{ticket.requester.email}}
+
+  case 'ticket.assignee.id':
+    {{ticket.assignee.id}}
+
+  case 'ticket.assignee.name':
+    {{ticket.assignee.name}}
+
+  case 'ticket.assignee.email':
+    {{ticket.assignee.email}}
+
+  case 'tags':
+    {{ticket.tags}}
+
+  case 'current_user.id':
+    {{current_user.id}}
+
+  case 'current_user.name':
+    {{current_user.name}}
+
+  case 'current_user.email':
+    {{current_user.email}}

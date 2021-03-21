@@ -1,0 +1,195 @@
+---
+title: "Text App"
+packages:
+  - default
+  - app_text_app
+
+parts:
+  - translation:
+      key: "txt.apps.text_app.app.name"
+      title: "Name for App: Text"
+      value: "Text"
+  - translation:
+      key: "txt.apps.text_app.app.short_description"
+      title: "Description for App: Text"
+      value: "Any text you want, with data placeholders"
+  - translation:
+      key: "txt.apps.text_app.app.long_description"
+      title: "Long Description for App: Text. Please do not modify/localize the quotes in the list at the end."
+      hidden: true
+      value: "Text enables you to put any text you want on a ticket page.
+
+
+If you need to give an important message to agents, give some instructions about filling out a ticket, or add a link to your retail system, this app enables you to do it.
+
+
+It also has \"data placeholder\" support, which means you can dynamically place data into the text you want to display. This is useful if you want to make a link that includes parameters about the current ticket, requester, or user.
+
+
+By enabling this app, you agree to the [Built by Zendesk Terms of Use](https://www.zendesk.com/company/built-by-zendesk-agmt/)."
+  - translation:
+      key: "txt.apps.text_app.app.installation_instructions"
+      title: "Installation Instructions for App: Text. Do not translate the placeholders (e.g., ticket.id)."
+      hidden: true
+      value: "Text is a very simple app, so it's really simple to get going.
+
+
+#### Setting up in Zendesk Support
+
+
+1. Sign in to your Zendesk Support account, then click the Admin icon in the sidebar.
+
+2. Select Apps > Marketplace, then find the Text app and click the tile.
+
+3. On the Text app page, click Install app in the upper-right corner.
+
+4. Enter a title to display in the \"Apps\" tray on a ticket.
+
+5. Enter any text you want. You can use placeholders (see below) and URLs, which will auto-link.
+
+
+#### About data placeholders
+
+
+If you've been using Zendesk Support for some time, you might be familiar with placeholders.
+
+
+These are small snippets of text which expand or transform themselves into full strings. For example, to display the current user's ID in your text, add `{{current_user.id}}` in the Text app, and it will display as the current user's ID (`2313`, for example).
+
+
+Also, you could put this into a URL as a parameter:
+
+```
+// This is the text I would put in the settings:
+https://www.example.com?user={{current_user.id}}
+
+
+// and this is how Text app would render it:
+https://www.example.com?user=2313
+```
+
+Although it's not obvious in this example, Text app will auto-link URLs for you.
+
+
+#### Data placeholders you can use
+
+
+Each of the data placeholders below renders a string:
+
+
+* `ticket.id` current ticket ID
+
+* `ticket.subject` current ticket subject
+
+* `ticket.status` current ticket status
+
+* `ticket.description` current ticket description
+
+* `ticket.priority` current ticket priority
+
+* `ticket.type` current ticket type
+
+* `ticket.tags` current ticket tags, comma separated
+
+* `ticket.requester.id` current ticket requester's ID
+
+* `ticket.requester.name` current ticket requester's name
+
+* `ticket.requester.email` current ticket requester's email
+
+* `ticket.assignee.id` current ticket assignee's ID
+
+* `ticket.assignee.name` current ticket assignee's name
+
+* `ticket.assignee.email` current ticket assignee's email
+
+* `current_user.id` current signed-in user's ID
+
+* `current_user.name` current signed-in user's name
+
+* `current_user.email` current signed-in user's email
+
+
+More data placeholders will be added in the future."
+  - translation:
+      key: "txt.apps.text_app.app.parameters.textBody.label"
+      title: "Label of the text box for the user to fill in"
+      value: "Your text"
+  - translation:
+      key: "txt.apps.text_app.app.parameters.textBody.helpText"
+      title: "warning message under the text box"
+      value: "Placeholders allowed, but not HTML."
+  - translation:
+      key: "txt.apps.text_app.app.parameters.openLinksInTabs.label"
+      title: "Settings of the App a checkbox allowing the user to forbid agents clicking an opening links in new tabs"
+      value: "Disable opening links in a new browser tab"
+      obsolete: "2018-11-07"
+  - translation:
+      key: "txt.apps.text_app.app.parameters.openLinksInTabs.helpText"
+      title: "help text of that previous checkbox settings"
+      value: "Any auto linked URLs will no longer open in a new browser tab."
+      obsolete: "2018-11-07"
+  - translation:
+      key: "txt.apps.text_app.new"
+      title: "Ticket status new"
+      value: "new"
+  - translation:
+      key: "txt.apps.text_app.open"
+      title: "Ticket status open"
+      value: "open"
+  - translation:
+      key: "txt.apps.text_app.pending"
+      title: "Ticket status pending"
+      value: "pending"
+  - translation:
+      key: "txt.apps.text_app.hold"
+      title: "Ticket status on-hold"
+      value: "on-hold"
+  - translation:
+      key: "txt.apps.text_app.closed"
+      title: "Ticket status closed"
+      value: "closed"
+  - translation:
+      key: "txt.apps.text_app.solved"
+      title: "Ticket status solved"
+      value: "solved"
+  - translation:
+      key: "txt.apps.text_app.-"
+      title: "Ticket priority unset"
+      value: "-"
+  - translation:
+      key: "txt.apps.text_app.low"
+      title: "Ticket priority low"
+      value: "low"
+  - translation:
+      key: "txt.apps.text_app.normal"
+      title: "Ticket priority normal"
+      value: "normal"
+  - translation:
+      key: "txt.apps.text_app.high"
+      title: "Ticket priority high"
+      value: "high"
+  - translation:
+      key: "txt.apps.text_app.urgent"
+      title: "Ticket priority urgent"
+      value: "urgent"
+  - translation:
+      key: "txt.apps.text_app.ticket"
+      title: "Ticket type ticket"
+      value: "ticket"
+  - translation:
+      key: "txt.apps.text_app.question"
+      title: "Ticket type question"
+      value: "question"
+  - translation:
+      key: "txt.apps.text_app.incident"
+      title: "Ticket type incident"
+      value: "incident"
+  - translation:
+      key: "txt.apps.text_app.problem"
+      title: "Ticket type problem"
+      value: "problem"
+  - translation:
+      key: "txt.apps.text_app.task"
+      title: "Ticket type task"
+      value: "task"

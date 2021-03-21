@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Zendesk",
+    "email": "support@zendesk.com",
+    "url": "https://www.zendesk.com/apps"
+  },
+
+  "location": {
+    "support": {
+      "ticket_sidebar": "assets/ticket_sidebar.html",
+      "new_ticket_sidebar": "assets/ticket_sidebar.html"
+    }
+  },
+
+  "defaultLocale": "en",
+  "private": false,
+  "frameworkVersion": "2.0",
+  "version": "2.0.10",
+
+  "parameters": [
+    {
+      "name": "textBody",
+      "type": "multiline",
+      "required": true
+    }
+  ]
+}

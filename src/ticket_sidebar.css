@@ -1,0 +1,5 @@
+@import '@zendeskgarden/css-bedrock';
+
+html { overflow: hidden; }
+body { overflow: hidden; }
+div[data-main] { overflow: auto; }
